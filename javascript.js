@@ -25,6 +25,9 @@ $("button").on("click", function(){
             topicImage.attr("src", originalImage)
             gifDiv.append(topicImage)
             $(".gifContainer").append(gifDiv)
+            var rating = results[i].rating;
+            var p = $("<p>").text("Rating: " + rating);
+            gifDiv.append(p);
         }
     })
 
